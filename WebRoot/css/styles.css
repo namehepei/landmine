@@ -1,0 +1,29 @@
+@CHARSET "UTF-8";
+
+.mines div{
+	clear:both;
+}
+.mines button{
+	/* height的高度及body的height的高度(br/)会影响显示 */
+	width:25px;
+	height:25px;
+	padding:2px;
+	margin:0px;
+	float: left;
+	display: inline-block;
+	position: relative;
+}
+
+.clickAble{
+	/* 无法直接识别颜色 */
+	background-color: #0000FF;
+}
+
+.clickUnAble{
+	backgroup-color:gray;
+}
+
+..clickRight{
+	backgroup-color:gray;
+	background-image:"WebRoot/image/flagRight.jpg";
+}

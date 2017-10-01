@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>	
+	<servlet>
+		<servlet-name>IndexServlet</servlet-name>
+		<servlet-class>cn.servlet.IndexServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>IndexServlet</servlet-name>
+		<url-pattern>/IndexServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>AllBlockServlet</servlet-name>
+		<servlet-class>cn.servlet.AllBlockServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AllBlockServlet</servlet-name>
+		<url-pattern>/AllBlockServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>GameSetServlet</servlet-name>
+		<servlet-class>cn.servlet.GameSetServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GameSetServlet</servlet-name>
+		<url-pattern>/GameSetServlet</url-pattern>
+	</servlet-mapping>
+	
+	<!-- 过滤器 -->
+	<!-- 过滤器链式顺序取决于<filter-mapping>元素的书写顺序 -->
+	<!-- <filter>
+		<filter-name>InitFilter</filter-name>
+		<filter-class>cn.filter.IntiFilter</filter-class> -->
+		<!-- 初始化参数charset -->
+<!-- 		<init-param>
+			<param-name>charset</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+	</filter> -->
+	<!-- 定义过滤器映射的URL -->
+<!-- 	<filter-mapping>
+		<filter-name>InitFilter</filter-name>
+		<url-pattern>/InitFilter</url-pattern>
+	</filter-mapping> -->
+	
+	<welcome-file-list>
+		<welcome-file>IndexServlet</welcome-file>
+	</welcome-file-list>		
+</web-app>

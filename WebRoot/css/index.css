@@ -1,0 +1,18 @@
+@CHARSET "UTF-8";
+
+div iframe{
+	height:800px;
+	width:800px;
+}
+
+#restart{
+	display:inline-block;
+	postion:relative;
+	float:left;
+}
+
+#set{
+	display:inline-block;
+	postion:relative;
+	flaot:right;
+}
