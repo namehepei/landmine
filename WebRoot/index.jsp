@@ -25,7 +25,6 @@
   	<div id="num">
   		<button disabled="disabled">${sessionScope.flagRightNum}</button>
   	</div>
-  	<div id="time"></div>
   	<div id="set">
   		<form method="post" action="setInput.jsp">
   			<button type="submit">menu</button>
